@@ -21,7 +21,7 @@ function square(n) {
 }
 
 /*The difference between the first and second version is that
-in the first we are telling to interpreter that he ha to 
+in the first we are telling to the interpreter that he ha to 
 calculate every term in expmod()*expmod(). While in the
 second form he can let the execution to the code until he
 reach the more depth level of iteration.That means that 

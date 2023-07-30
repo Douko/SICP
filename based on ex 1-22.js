@@ -1,6 +1,6 @@
 
 //RUN IN TERMINAL for time test.
-//Code for to find all primes until parameter.
+//Code to find all primes until parameter.
 function display(message) {
     console.log(message);
 }

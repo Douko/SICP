@@ -23,7 +23,7 @@ function primes_until(n) {
             i++;
         }
         display(`total time: ${get_time() - start_time}`);
-        console.log(`Total of primes found: ${list.length+1}`)
+        console.log(`Total of primes found: ${list.length}`)
         console.log(`The last element is: ${list.slice(-1)}`);
     }
     function test_list(list, i) {

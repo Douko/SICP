@@ -24,11 +24,18 @@ function square(n) {
 in the first we are telling to the interpreter that he ha to 
 calculate every term in expmod()*expmod(). While in the
 second form he can let the execution until he
-reach the more depth level of iteration.That means that 
+reach the more depth level of iteration. 
+That means that 
 in frist version he has to calculete n term, he has to do n steps,
 but in the second form he just has to calculate log(n) terms.
-for example to exp(n, 7,m) he has to calculate: (base*square(base*(square(base*1))))%m
-3 steps (if we count base*1 as 1) + 1 step for %m
-instead that: base*base*base*base*base*base%m
-7 steps + 1 step for %m
+for example to exp(n, 7,m) 
+he has to calculate: 
+(base*square(base*(square(base*1%m)%m)%m)%m)%m
+4 steps (if we count base*1 as 0) + 5 steps for %m
+instead that:
+(base*(base*(base*(base*(base*(base%m)%m)%m)%m)%m)%m)%m
+7 steps + 7 steps for %m.
+Note: In each step the interpreter is calculated the module of 
+the base, so that it does not exceed the maximum value limit 
+for an integer in javascript
 */

@@ -35,7 +35,7 @@ he has to calculate:
 instead that:
 (base*(base*(base*(base*(base*(base%m)%m)%m)%m)%m)%m)%m
 7 steps + 7 steps for %m.
-Note: In each step the interpreter is calculated the module of 
+Note: In each step the interpreter is calculating the module of 
 the base, so that it does not exceed the maximum value limit 
 for an integer in javascript
 */

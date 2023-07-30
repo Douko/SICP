@@ -38,6 +38,6 @@ function primes_until(n) {
     }
     return primes_until_iter(n, 2, get_time(), [])
 }
-
-primes_until(1_000_000);
+//10 seconds or less
+primes_until(100_000_000);
 

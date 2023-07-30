@@ -34,7 +34,7 @@ he has to calculate:
 4 steps (if we count base*1 as 0) + 5 steps for %m
 instead that:
 (base*(base*(base*(base*(base*(base%m)%m)%m)%m)%m)%m)%m
-7 steps + 7 steps for %m.
+6 steps + 7 steps for %m.
 Note: In each step the interpreter is calculating the module of 
 the base, so that it does not exceed the maximum value limit 
 for an integer in javascript

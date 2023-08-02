@@ -6,7 +6,7 @@ function get_time() {
     return (new Date()).getTime();
 }
 
-/*code is going slow because he has to print in console */
+/*code is going slow because has to print in console */
 function primes_until(n) {
     function primes_until_iter(n, i, start_time, list) {
         while (i <= n) {

@@ -11,6 +11,6 @@ function square(m){
     return m*m;
 }
 
-display(2*product(wallis_term,1,10,1));
+display(2*product(wallis_term,1,10));
 
-display(2*product(wallis_term,1,100000,1));
+display(2*product(wallis_term,1,1000));

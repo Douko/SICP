@@ -40,6 +40,6 @@ function is_prime(n) {
 }
 
 
-
+console.log(is_prime(5));
 //timed_prime_test(999999999989);
 timed_prime_test(3314192745739);

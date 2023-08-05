@@ -11,7 +11,7 @@ const Phi_fixed = 1.618033988749
 
 function aprox_4dec(i){
     display(1+cont_frac(t=>1,t=>1,i));
-    return Math.floor(10000*(1+cont_frac(t=>1, t=>1, i)))==Math.floor(10000*Phi_fixed)
+    return math_floor(10000*(1+cont_frac(t=>1, t=>1, i)))==math_floor(10000*Phi_fixed)
         ?i
         :aprox_4dec(i+1)
 }
@@ -22,5 +22,8 @@ display(Phi);
 /*
 function display(m){
     console.log(m);
+}
+function math_floor(n){
+    return Math.floor(n);
 }
 */
